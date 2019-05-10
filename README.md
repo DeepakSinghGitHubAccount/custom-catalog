@@ -2,7 +2,7 @@
 
 Under your root folder, run the following command lines:
 
-- composer require php-cuong/magento2-currency-symbol-position
+- composer require deepak-singh-git-hub-account/magento2-custom-catalog
 - php bin/magento setup:upgrade --keep-generated
 - php bin/magento setup:di:compile
 - php bin/magento cache:flush

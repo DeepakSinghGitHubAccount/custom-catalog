@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Btd\DemoCatalog\Api\CustomCatalogRepositoryInterface" type="Btd\DemoCatalog\Model\CustomCatalogRepository"/>
+	<preference for="Btd\DemoCatalog\Api\Data\CustomCatalogInterface" type="Btd\DemoCatalog\Model\CustomCatalog"/>
+	<preference for="Btd\DemoCatalog\Api\Data\CustomCatalogSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Btd\DemoCatalog\Model\ResourceModel\CustomCatalog\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">btd_democatalog_custom_catalog</argument>
+			<argument name="resourceModel" xsi:type="string">Btd\DemoCatalog\Model\ResourceModel\CustomCatalog\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="btd_democatalog_custom_catalog_grid_data_source" xsi:type="string">Btd\DemoCatalog\Model\ResourceModel\CustomCatalog\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

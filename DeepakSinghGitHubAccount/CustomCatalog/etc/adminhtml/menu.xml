@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-	<menu>
-		<add action="btd_democatalog/customcatalog/index" id="Btd_DemoCatalog::btd_democatalog_custom_catalog" module="Btd_DemoCatalog" parent="Magento_Catalog::inventory" resource="Magento_Backend::content" sortOrder="30" title="Custom Catalog"/>
-		
-	</menu>
-</config>
